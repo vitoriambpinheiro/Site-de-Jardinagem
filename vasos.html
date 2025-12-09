@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanTerra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/logo.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="header">
+        <img src="resources/logo.png">
+        <span>PlanTerra</span>
+    </div>
+ 
+    <div class="aside">
+        <nav>
+            <ul class="menu-vertical">
+               <li>
+                    <a href="index.html">
+                        <img src="resources/home.png">
+                        Home
+                    </a>
+               </li>
+               <li>
+                    <a href="plantas.html">
+                        <img src="resources/planta.png">
+                        Plantas
+                    </a>
+               </li>
+               <li>
+                <a href="mudas.html" >
+                    <img src="resources/planta.png">
+                    Mudas
+                </a>
+                </li>
+                <li>
+                    <a href="frutiferas.html">
+                        <img src="resources/planta.png">
+                        Frutiferas
+                    </a>
+                </li>
+                <li>
+                    <a href="vasos.html" id="item_atual">
+                        <img src="resources/planta.png">
+                        Vasos
+                    </a>
+                </li>
+                <li>
+                    <a href="jardineiras">
+                        <img src="resources/planta.png">
+                        Jardineiras
+                    </a>
+                </li>
+                <li>
+                    <a href="fertilizante.html">
+                        <img src="resources/fertilizante.png">
+                        Fertilizante
+                    </a>
+                </li>
+                <li>
+                    <a href="cuidados.html">
+                        <img src="resources/fertilizante.png">
+                        Cuidados
+                    </a>
+                </li>
+                <li>
+                    <a href="servicos.html">
+                        <img src="resources/servico.png">
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        <img src="resources/contato.png">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main central">
+                
+        <h2>Vasos</h2>
+        <div class="filtros">
+            <span>Selecione uma cor:</span>
+
+            <!--   onchange = ao mudar / onclick = ao clicar   -->
+            <input onchange="trocarCor()" type="color" id="seletor" value="#000000">
+        </div>
+
+        <div class="galeria">
+
+            <div class="item">
+                <h3>Vaso 1</h3>
+                <svg class="icone" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> </style> <g> <path class="st0" d="M373.041,210.167c-29.952-29.952-70.935-39.621-70.935-106.226C302.105,57.744,325.289,0,325.289,0H186.696 c0,0,23.183,57.744,23.183,103.942c0,66.605-40.982,76.273-70.934,106.226c-29.953,29.953-48.475,71.344-48.475,117.049 c0,29.006,7.461,56.267,20.568,79.973c13.122,23.699,31.891,43.836,54.474,58.621H256h90.473 c22.599-14.784,41.367-34.922,54.474-58.621c13.122-23.706,20.584-50.967,20.584-79.973 C421.531,281.511,403.009,240.12,373.041,210.167z"></path> <rect x="163.604" y="481.201" class="st0" width="184.776" height="30.799"></rect> </g> </g></svg>
+                <span>R$100</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="item">
+                <h3>Vaso 2</h3>
+                <svg class="icone" fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>vase</title> <path d="M24.604 5.491c-1.113-0.969-2.627-0.052-4.198 1.185-0.048-0.576-0.439-0.81-0.439-1.435 0 0 1.606-0.365 1.997-0.998 0.35-0.566 0.405-1.468 0-1.997-1.257-1.642-4.992-1.618-5.99-1.618s-4.733-0.024-5.99 1.618c-0.405 0.528-0.35 1.431 0 1.997 0.391 0.633 1.997 0.998 1.997 0.998 0 0.457-0.445 0.75-0.443 1.489-1.639-1.254-3.221-2.214-4.344-1.199-2.010 1.818 0.117 5.86 1.302 8.168-0.757 2.006-1.011 4.014-0.51 5.518 0.998 2.995 3.994 4.992 3.994 6.988 0 0.998-0.998 0.998-0.998 1.997s1.997 2.995 4.992 2.995c2.995 0 4.992-1.997 4.992-2.995s-0.998-0.998-0.998-1.997c0-1.997 2.995-3.994 3.994-6.988 0.502-1.505 0.247-3.514-0.51-5.52 1.14-2.328 3.202-6.424 1.153-8.207zM11.98 8.236c-1.037 1.037-1.954 2.314-2.669 3.664-0.986-1.672-2.753-4.204-1.373-5.476 0.927-0.855 3.412 1.020 3.837 1.352 0.057 0.143 0.124 0.295 0.207 0.46h-0.001zM20.201 7.716c0.659-0.518 2.807-2.089 3.676-1.318 1.397 1.239-0.298 3.785-1.254 5.476-0.713-1.341-1.625-2.607-2.656-3.638 0.095-0.191 0.172-0.363 0.234-0.52z"></path> </g></svg>
+                <span>R$150</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="item">
+                <h3>Vaso 3</h3>
+                <svg class="icone" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 380.73 380.73" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M231.276,66.184c0-22.477,29.918-36.442,18.312-53.277C237.992-3.929,137.38-5.057,128.567,14.05 c-8.83,19.107,20.902,29.93,20.902,52.395s-48.34,285.942-45.737,300.546c1.18,6.564,45.604,13.978,89.174,13.733 c41.891-0.244,82.998-7.866,84.09-14.023C279.622,352.107,231.276,88.637,231.276,66.184z M178.726,70.668 c-0.059,7.936-0.906,16.655-1.83,25.892c-0.93,9.185-1.714,19.119-3.119,28.919c-2.405,19.833-5.496,40.903-8.808,61.927 c-6.791,42.031-15.168,83.765-22.436,114.904c-3.509,15.58-7.175,28.441-9.376,37.492c-2.405,9.028-3.985,14.164-3.985,14.164 s0.238-5.356,0.999-14.663c0.906-9.283,1.795-22.599,3.596-38.47c3.375-31.789,9.243-73.906,15.941-115.878 c3.631-20.949,6.936-41.903,10.637-61.486c1.771-9.696,3.474-19.083,5.101-27.983c1.574-8.876,3.428-17.225,4.45-25.218 c0.574-3.846,1.121-7.535,1.644-11.043c-0.238-3.358,0.169-6.71-0.534-9.685c-0.883-6.105-2.725-11.328-4.822-15.336 c-4.032-8.174-8.005-11.991-8.005-11.991s1.121,0.709,3.085,2.33c1.853,1.679,4.746,4.142,7.494,8.093 c2.852,3.828,5.745,9.051,7.813,15.581c1.284,3.23,1.511,6.89,2.358,10.712C179.091,63.197,178.771,66.549,178.726,70.668z"></path> </g> </g></svg>
+                <span>R$170</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Todos os Direitos Reservados &copy; 2025 por PlanTerra</span>
+    </div>
+ 
+</body>
+</html>
+<script>
+
+    function trocarCor(){
+
+        let corSelecionada = document.getElementById("seletor").value;
+
+        // Lista com os itens (icones)
+        let icones = document.getElementsByClassName("icone");
+
+        //Length mostra o tamanho da lista.
+        for(let i = 0; i < icones.length; i++){
+            icones[i].style.color = corSelecionada;
+        }
+    }
+
+</script>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanTerra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resources/logo.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="header">
+        <img src="resources/logo.png">
+        <span>PlanTerra</span>
+    </div>
+ 
+    <div class="aside">
+        <nav>
+            <ul class="menu-vertical">
+               <li>
+                    <a href="index.html">
+                        <img src="resources/home.png">
+                        Home
+                    </a>
+               </li>
+               <li>
+                    <a href="plantas.html">
+                        <img src="resources/planta.png">
+                        Plantas
+                    </a>
+               </li>
+               <li>
+                <a href="mudas.html" >
+                    <img src="resources/planta.png">
+                    Mudas
+                </a>
+                </li>
+                <li>
+                    <a href="frutiferas.html">
+                        <img src="resources/planta.png">
+                        Frutiferas
+                    </a>
+                </li>
+                <li>
+                    <a href="vasos.html">
+                        <img src="resources/planta.png">
+                        Vasos
+                    </a>
+                </li>
+                <li>
+                    <a href="jardineiras">
+                        <img src="resources/planta.png">
+                        Jardineiras
+                    </a>
+                </li>
+                <li>
+                    <a href="fertilizante.html">
+                        <img src="resources/fertilizante.png">
+                        Fertilizante
+                    </a>
+                </li>
+                <li>
+                    <a href="cuidados.html" id="item_atual">
+                        <img src="resources/fertilizante.png">
+                        Cuidados
+                    </a>
+                </li>
+                <li>
+                    <a href="servicos.html">
+                        <img src="resources/servico.png">
+                        Serviços
+                    </a>
+                </li>
+                <li>
+                    <a href="contato.html">
+                        <img src="resources/contato.png">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main central">
+        <h2>Cuidados</h2>
+
+        <div class="btns_cuidados">
+            <button class="btn_escolha_plantas" onclick="escolherPlantas()">Escolha das Plantas</button>
+            <button class="btn_rega_adequada" onclick="regaAdequada()">Rega Adequada</button>
+            <button class="btn_solo_adubacao" onclick="soloAdubacao()">Solo e Adubação</button>
+            <button class="btn_manutencao_poda" onclick="manutencaoPoda()">Manutenção e Poda</button>
+        </div>
+
+        <div class="cuidados">
+
+            <!-- Tela Verde -->
+            <div id="dv_verde" class="fundo fundo_verde">
+                <h1>🌱 Escolha das Plantas Certas</h1>
+                <div class="dicas">
+                    <div class="dica">
+                        <img src="resources/clima.png" alt="Ilustrações de diferentes tipos de climas">
+                        <p>
+                            Observe o clima da sua região
+                            (sol, sombra, umidade).
+                        </p>
+                    </div>
+                    <div class="dica"></div>
+                    <div class="dica"></div> 
+                </div>
+            </div>
+
+            <!-- Tela Azul -->
+            <div id="dv_azul" class="fundo fundo_azul">
+                <h1>🌱 Escolha das Plantas Certas</h1>
+                <div class="dicas">
+                    <div class="dica"></div>
+                    <div class="dica"></div>
+                    <div class="dica"></div>
+                </div>
+            </div>
+
+            <!-- Tela Marrom -->
+            <div id="dv_marrom" class="fundo fundo_marrom">
+                <h1>🌱 Escolha das Plantas Certas</h1>
+                <div class="dicas">
+                    <div class="dica"></div>
+                    <div class="dica"></div>
+                    <div class="dica"></div>
+                </div>
+            </div>
+
+            <!-- Tela Amarelo -->
+            <div id="dv_amarelo" class="fundo fundo_amarelo">
+                <h1>🌱 Escolha das Plantas Certas</h1>
+                <div class="dicas">
+                    <div class="dica"></div>
+                    <div class="dica"></div>
+                    <div class="dica"></div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <span>Todos os Direitos Reservados &copy; 2025 por PlanTerra</span>
+    </div>
+ 
+</body>
+</html>
+<script>
+
+    function escolherPlantas(){
+        //Mostrar apenas a div escolhida
+        document.getElementById("dv_verde").style.display = "flex";
+
+        document.getElementById("dv_azul").style.display = "none";
+        document.getElementById("dv_marrom").style.display = "none";
+        document.getElementById("dv_amarelo").style.display = "none";
+    }
+
+    function regaAdequada(){
+        document.getElementById("dv_azul").style.display = "flex";
+
+        document.getElementById("dv_verde").style.display = "none";
+        document.getElementById("dv_marrom").style.display = "none";
+        document.getElementById("dv_amarelo").style.display = "none";
+    }
+
+    function soloAdubacao(){
+        document.getElementById("dv_marrom").style.display = "flex";
+
+        document.getElementById("dv_verde").style.display = "none";
+        document.getElementById("dv_azul").style.display = "none";
+        document.getElementById("dv_amarelo").style.display = "none";
+    }
+
+    function manutencaoPoda(){
+        document.getElementById("dv_amarelo").style.display = "flex";
+
+        document.getElementById("dv_verde").style.display = "none";
+        document.getElementById("dv_azul").style.display = "none";
+        document.getElementById("dv_marrom").style.display = "none";
+    }
+
+</script>
